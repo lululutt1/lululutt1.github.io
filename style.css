@@ -31,6 +31,7 @@ body {
     inset: 0;
     z-index: -1;
     overflow: hidden;
+
     background: linear-gradient(
         135deg,
         #FAF7F4,
@@ -70,32 +71,22 @@ body {
     left: 45%;
 }
 
-/* ===== Main Browser ===== */
+/* ===== Main Content ===== */
 
-.browser {
-    width: 90%;
-    max-width: 1250px;
-    margin: 65px auto;
-    border-radius: 18px;
-    overflow: hidden;
-
-    background: rgba(255, 255, 255, 0.35);
-    border: 1px solid rgba(255,255,255,0.8);
-
-    box-shadow:
-        0 25px 70px rgba(130, 100, 115, 0.12),
-        0 5px 15px rgba(130, 100, 115, 0.05);
-
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+.main-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
 }
+
 /* ===== Navigation ===== */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 55px;
+    padding: 35px 9%;
 }
 
 .logo {
@@ -270,6 +261,8 @@ section h2 {
     margin-bottom: 30px;
 }
 
+/* ===== About ===== */
+
 .about {
     background: rgba(255,255,255,0.4);
     border-top: 1px solid white;
@@ -330,6 +323,7 @@ section h2 {
         #E8E1ED,
         #F4E8E4
     );
+
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -394,9 +388,8 @@ footer {
 
 @media (max-width: 650px) {
 
-    .browser {
-        width: 96%;
-        margin: 20px auto;
+    .main-content {
+        width: 100%;
     }
 
     nav {
