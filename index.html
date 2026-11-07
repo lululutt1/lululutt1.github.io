@@ -119,189 +119,78 @@
             </div>
         </div>
 
-    </div>
+    
+<!-- My Contributions -->
+<div class="contributions">
 
-    <!-- My contributions -->
-    <div class="contributions">
+    <div class="section-label">MY CONTRIBUTIONS</div>
+    <h3>Systems I Worked On</h3>
 
-        <div class="section-label">MY CONTRIBUTIONS</div>
-        <h3>Systems I Worked On</h3>
+    <div class="systems-grid">
 
-        <p class="contribution-intro">
-            Explore some of the systems I implemented
-            and contributed to during development.
-        </p>
-
-        <!-- System navigation -->
-        <div class="system-tabs">
-            <button class="system-tab active" data-slide="0">01</button>
-            <button class="system-tab" data-slide="1">02</button>
-            <button class="system-tab" data-slide="2">03</button>
-            <button class="system-tab" data-slide="3">04</button>
+        <div class="system-card">
+            <h4>01. Collectible System</h4>
+            <p>
+                Implemented collectible interactions that trigger
+                narrative events and update game progress.
+            </p>
         </div>
 
-        <!-- System slides -->
-        <div class="system-showcase">
-
-            <!-- System 1: Collectible -->
-            <article class="system-slide active">
-
-                <div class="system-image">
-                    <img src="images/collectible.png"
-                         alt="Collectible system gameplay screenshot">
-                </div>
-
-                <div class="system-content">
-                    <span class="system-number">SYSTEM 01 / 04</span>
-                    <h3>Collectible System</h3>
-
-                    <p>
-                        Implemented a collectible system that allows
-                        players to interact with story-related items
-                        throughout the level.
-                    </p>
-
-                    <h4>My Implementation</h4>
-                    <ul>
-                        <li>Used Unity's trigger system to detect player interactions.</li>
-                        <li>Connected collectible interactions to the narrative UI.</li>
-                        <li>Updated the game state when an item was collected.</li>
-                        <li>Removed the collectible after successful interaction.</li>
-                    </ul>
-
-                    <h4>How It Works</h4>
-                    <p>
-                        When the player enters the collectible's trigger
-                        area, a narrative dialogue appears. The game state
-                        is updated, and the collectible disappears.
-                    </p>
-                </div>
-
-            </article>
-
-            <!-- System 2: Dialogue -->
-            <article class="system-slide">
-
-                <div class="system-image">
-                    <img src="images/dialogue.png"
-                         alt="Dialogue system gameplay screenshot">
-                </div>
-
-                <div class="system-content">
-                    <span class="system-number">SYSTEM 02 / 04</span>
-                    <h3>Dialogue System</h3>
-
-                    <p>
-                        Developed the dialogue interaction system
-                        to display story conversations during gameplay.
-                    </p>
-
-                    <h4>My Implementation</h4>
-                    <ul>
-                        <li>Read dialogue entries from CSV data.</li>
-                        <li>Displayed dialogue through a UI dialogue box.</li>
-                        <li>Allowed players to advance dialogue by pressing E.</li>
-                        <li>Managed the progression between dialogue lines.</li>
-                    </ul>
-
-                    <h4>How It Works</h4>
-                    <p>
-                        Dialogue data is loaded and displayed in the UI.
-                        Players press E to move through the conversation
-                        one line at a time.
-                    </p>
-                </div>
-
-            </article>
-
-            <!-- System 3: Narrative Progression -->
-            <article class="system-slide">
-
-                <div class="system-image">
-                    <img src="images/narrative.png"
-                         alt="Narrative progression gameplay screenshot">
-                </div>
-
-                <div class="system-content">
-                    <span class="system-number">SYSTEM 03 / 04</span>
-                    <h3>Narrative Progression</h3>
-
-                    <p>
-                        Connected collectible interactions and dialogue
-                        events to support the game's narrative progression.
-                    </p>
-
-                    <h4>My Implementation</h4>
-                    <ul>
-                        <li>Triggered narrative events through collectibles.</li>
-                        <li>Connected the dialogue system with story interactions.</li>
-                        <li>Used game state information to track progression.</li>
-                    </ul>
-
-                    <h4>How It Works</h4>
-                    <p>
-                        Players discover story-related items while
-                        exploring the level. Collecting them triggers
-                        dialogue and reveals parts of the narrative.
-                    </p>
-                </div>
-
-            </article>
-
-            <!-- System 4: Door Logic -->
-            <article class="system-slide">
-
-                <div class="system-image">
-                    <img src="images/door.png"
-                         alt="Door interaction gameplay screenshot">
-                </div>
-
-                <div class="system-content">
-                    <span class="system-number">SYSTEM 04 / 04</span>
-                    <h3>Door & Level Progression</h3>
-
-                    <p>
-                        Implemented door interaction logic that checks
-                        whether the player has collected the required item
-                        before moving to the next level.
-                    </p>
-
-                    <h4>My Implementation</h4>
-                    <ul>
-                        <li>Checked the collectible state when the player reached the door.</li>
-                        <li>Allowed level progression when the requirement was met.</li>
-                        <li>Displayed dialogue when the player had not collected the item.</li>
-                    </ul>
-
-                    <h4>How It Works</h4>
-                    <p>
-                        The door checks the player's progress.
-                        If the required collectible has been obtained,
-                        the next scene loads. Otherwise, the player
-                        receives a dialogue prompt.
-                    </p>
-                </div>
-
-            </article>
-
+        <div class="system-card">
+            <h4>02. Dialogue System</h4>
+            <p>
+                Developed dialogue interactions using CSV data
+                and a UI system that allows players to progress
+                through conversations.
+            </p>
         </div>
 
-        <!-- Previous / Next controls -->
-        <div class="system-controls">
+        <div class="system-card">
+            <h4>03. Narrative Progression</h4>
+            <p>
+                Connected collectible interactions and dialogue
+                events to support the game's narrative progression.
+            </p>
+        </div>
 
-            <button id="prevBtn" class="nav-button" disabled>
-                ← Previous
-            </button>
-
-            <span id="slideCounter">01 / 04</span>
-
-            <button id="nextBtn" class="nav-button">
-                Next →
-            </button>
-
+        <div class="system-card">
+            <h4>04. Door & Level Progression</h4>
+            <p>
+                Implemented door logic that checks collectible
+                requirements before allowing players to enter
+                the next level.
+            </p>
         </div>
 
     </div>
+
+    <!-- Gameplay Gallery -->
+    <div class="gallery-section">
+
+        <div class="section-label">GAMEPLAY GALLERY</div>
+        <h3>See It in Action</h3>
+
+        <div class="gallery-marquee">
+            <div class="gallery-track">
+
+                <!-- First set of images -->
+                <img src="images/collectible.png" alt="Collectible gameplay">
+                <img src="images/dialogue.png" alt="Dialogue gameplay">
+                <img src="images/narrative.png" alt="Narrative gameplay">
+                <img src="images/door.png" alt="Door gameplay">
+
+                <!-- Duplicate set for seamless scrolling -->
+                <img src="images/collectible.png" alt="Collectible gameplay">
+                <img src="images/dialogue.png" alt="Dialogue gameplay">
+                <img src="images/narrative.png" alt="Narrative gameplay">
+                <img src="images/door.png" alt="Door gameplay">
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
     
         </section>
 
