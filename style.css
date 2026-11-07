@@ -15,14 +15,14 @@ html {
 
 body {
     font-family: 'DM Sans', sans-serif;
-    color: #51434b;
-    background: #fceef3;
+    color: #43565a;
+    background: #edf5f1;
     min-height: 100vh;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
-    color: #513d48;
+    color: #3f5652;
 }
 
 h2 {
@@ -39,7 +39,7 @@ h3 {
 
 p {
     line-height: 1.8;
-    color: #74636d;
+    color: #687d79;
 }
 
 
@@ -54,9 +54,9 @@ p {
     z-index: -1;
     background: linear-gradient(
         135deg,
-        #fff4f7 0%,
-        #fceaf1 45%,
-        #f8e7f1 100%
+        #f1f8f3 0%,
+        #eaf3f5 50%,
+        #e5eff2 100%
     );
 }
 
@@ -70,7 +70,7 @@ p {
 .blob-1 {
     width: 450px;
     height: 450px;
-    background: #f5c5d8;
+    background: #c6e5d5;
     top: -120px;
     left: -100px;
 }
@@ -78,7 +78,7 @@ p {
 .blob-2 {
     width: 500px;
     height: 500px;
-    background: #e8c9eb;
+    background: #c6dfe9;
     right: -150px;
     top: 30%;
 }
@@ -86,7 +86,7 @@ p {
 .blob-3 {
     width: 400px;
     height: 400px;
-    background: #f8d6df;
+    background: #d9eadf;
     bottom: -120px;
     left: 25%;
 }
@@ -134,7 +134,7 @@ nav {
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 3px;
-    color: #654957;
+    color: #48665b;
 }
 
 nav ul {
@@ -145,7 +145,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #806b76;
+    color: #718b83;
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -153,7 +153,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #c0789b;
+    color: #659c87;
 }
 
 
@@ -165,7 +165,7 @@ nav a:hover {
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #bd819d;
+    color: #729e8b;
     margin-bottom: 18px;
 }
 
@@ -199,10 +199,10 @@ nav a:hover {
     padding: 9px 17px;
     border-radius: 30px;
 
-    background: rgba(237, 197, 214, 0.35);
-    border: 1px solid rgba(210, 160, 185, 0.3);
-
-    color: #98647d;
+    background: rgba(191, 222, 207, 0.35);
+    border: 1px solid rgba(143, 190, 166, 0.35);
+   
+    color: #587f6c;
     font-size: 0.8rem;
     font-weight: 600;
 }
@@ -341,17 +341,17 @@ nav a:hover {
 .gallery-track {
     display: flex;
     width: max-content;
-    gap: 20px;
+    gap: 25px;
 
     animation: gallery-scroll 35s linear infinite;
 }
 
 .gallery-track img {
     display: block;
-    width: 200px;
-    height: 125px;
+    width: 280px;
+    height: 180px;
     object-fit: contain;
-    border-radius: 14px;
+    border-radius: 16px;
     flex-shrink: 0;
 }
 
